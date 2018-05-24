@@ -25,12 +25,13 @@ public class SelectSockets {
     // servicing all the channels, so no danger of concurrent acccess.
     //对所有的通道使用相同的缓冲区。单线程为所有的通道进行服务，所以并发访问没有风险
     private ByteBuffer buffer = ByteBuffer.allocateDirect(1024);
-
+private  int c=0;
   private   int _a=0;
     private  int _b=0;
 
     public SelectSockets(int a,int b)
     {
+
         this._a=a;
         this._b=b;
     }

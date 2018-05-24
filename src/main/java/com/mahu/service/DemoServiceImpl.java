@@ -19,8 +19,6 @@ public class DemoServiceImpl implements  IDemoService {
     {
         DemoServiceImpl _s=new  DemoServiceImpl();
 
-
-
             ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10,
                     200, TimeUnit.MILLISECONDS,new ArrayBlockingQueue<Runnable>(5));
 
